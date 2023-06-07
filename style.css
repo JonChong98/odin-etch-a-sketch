@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    border: solid 1px blue;
+    justify-content: center;
+}
+
+.grid {
+    width: 500px;
+    height: 500px;
+    border-left: solid 1px grey;
+    border-top: solid 1px grey;
+    display: grid;
+}
