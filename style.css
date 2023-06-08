@@ -1,7 +1,13 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
 .container {
     display: flex;
-    border: solid 1px blue;
     justify-content: center;
+    gap: 50px;
+    margin-top: 10px;
 }
 
 .grid {
@@ -10,4 +16,18 @@
     border-left: solid 1px grey;
     border-top: solid 1px grey;
     display: grid;
+}
+
+.shaded {
+    background-color: black;
+}
+
+.settings {
+    display: flex;
+    align-items: center;
+}
+
+.userInput {
+    width: 50px;
+    text-align: center;
 }
