@@ -10,21 +10,40 @@
 
 <body>
     <div class="container">
-        <div class="settings">
-            <div class="colourMode">
-                Select Colouring Mode:
-                <button class="colourOption bw" onclick="setColourMode('bw')">B/W</button>
-                <button class="colourOption shading" onclick="setColourMode('shading')">Shading</button>
-                <button class="colourOption random" onclick="setColourMode('random')">Rainbow</button>
+        <div class="top">
+            <div class="settings">
+                <div class="introText">
+                    <h1>Doodle Pad</h1>
+                    <p>Research says<br>doodling reduces stress</p>
+                    <p>So why not give it a try?</p>
+                </div>
+                <div class="colourMode">
+                    Colour Mode
+                    <button class="colourOption" onclick="setColourMode('bw')">
+                        <div class="optionLight bw selected"></div>Classic
+                    </button>
+                    <button class="colourOption" onclick="setColourMode('shading')">
+                        <div class="optionLight shading"></div>Shading
+                    </button>
+                    <button class="colourOption" onclick="setColourMode('random')">
+                        <div class="optionLight random"></div>Avant-garde
+                    </button>
+                </div>
             </div>
-            <div class=" gridGeneration">
-                <input class="userInput" value="32" />
-                <button onclick="spawnGrid()">Set Grid Size</button>
+            <div class="grid">
+                <!-- Grid generated using javascript and gets inserted here -->
             </div>
         </div>
-        <div class="grid">
+        <div class="bottom">
+            <div class="bottomLabel">Grid Size</div>
+            <div class="gridGeneration">
+                <input class="sliderInfo" value="32" disabled />
+                <input type="range" min="1" max="100" value="32" class="slider" onchange="spawnGrid()"
+                    onmousemove="updateSliderInfo()" />
+                <button class="gridReset" onclick="spawnGrid()">Reset Grid</button>
+            </div>
+        </div>
 
-        </div>
     </div>
 </body>
 
