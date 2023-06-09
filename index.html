@@ -11,7 +11,13 @@
 <body>
     <div class="container">
         <div class="settings">
-            <div>
+            <div class="colourMode">
+                Select Colouring Mode:
+                <button class="colourOption bw" onclick="setColourMode('bw')">B/W</button>
+                <button class="colourOption shading" onclick="setColourMode('shading')">Shading</button>
+                <button class="colourOption random" onclick="setColourMode('random')">Rainbow</button>
+            </div>
+            <div class=" gridGeneration">
                 <input class="userInput" value="32" />
                 <button onclick="spawnGrid()">Set Grid Size</button>
             </div>

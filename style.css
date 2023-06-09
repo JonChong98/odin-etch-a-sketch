@@ -18,13 +18,31 @@ body {
     display: grid;
 }
 
-.shaded {
+.blackShade {
     background-color: black;
 }
 
 .settings {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.colourMode {
+    display: flex; 
+    flex-direction: column;
+    gap: 10px;
     align-items: center;
+}
+
+.colourOption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 90px;
+    height: 30px;
 }
 
 .userInput {
