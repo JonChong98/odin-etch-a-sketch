@@ -29,9 +29,8 @@ function clearGrid() {
 
 // Shades the square passed into the function depending on the colourMode var value
 function shadeSquare(square) {
-    square.className = "";
     if (colourMode === "bw") {
-        square.classList.add("blackShade");
+        square.style.backgroundColor = "black";
     } else if (colourMode === "shading") {
         if (square.style.backgroundColor === "") {
             square.style.backgroundColor = "rgb(240, 240 ,240)";
